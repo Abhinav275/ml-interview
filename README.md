@@ -74,6 +74,7 @@ of the deep learning book, which covers machine learning basics.
     - L1 (lasso): can shrink certain coef to zero, thus performing feature selection
     - L2 (ridge): shrink all coef with the same proportion; almost always outperforms L1
     - combined (Elastic Net): 
+    - More explanation about [Regularization](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a)
 * assumes linear relationship between features and the label
 * can add polynomial and interaction features to add non-linearity
 
