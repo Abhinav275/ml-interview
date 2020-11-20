@@ -45,7 +45,7 @@ your memory beforehand. Some good SQL resources are:
 First, it's always a good idea to review [Chapter 5](http://www.deeplearningbook.org/contents/ml.html) 
 of the deep learning book, which covers machine learning basics.
 
-
+* [Bias variance tradeoff](#bias-variance-tradeoff)
 * [Linear regression](#linear-regression)
 * [Logistic regression](#logistic-regression)
 * [KNN](#knn)
@@ -63,8 +63,9 @@ of the deep learning book, which covers machine learning basics.
 * [word2vec](#word2vec)
 * [Generative vs discriminative](#generative-vs-discriminative)
 * [Paramteric vs Nonparametric](#paramteric-vs-nonparametric)
+* [Various optimizers](#various-optimizers)
 
-
+### [Bias variance tradeoff](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)
 
 ### Linear regression
 
@@ -90,6 +91,7 @@ of the deep learning book, which covers machine learning basics.
 to range [0, 1] 
 * Threshold to make prediction: if the output > .5, prediction 1; otherwise prediction 0
 * a special case of softmax function, which deals with multi-class problem
+* The sigmoid function is used for the two-class logistic regression, whereas the softmax function is used for the multiclass logistic regression (a.k.a. MaxEnt, multinomial logistic regression, softmax Regression, Maximum Entropy Classifier).
 
 [back to top](#machine-learning)
 
@@ -121,9 +123,7 @@ when K equals number of data points or other large number the model is prone to 
 to be as far from the closest training point as possible
 * the closest training examples are called the support vectors, since they are the points
 based on which the decision boundary is drawn
-* SVMs are sensitive to feature scaling
-
-![svm](https://qph.ec.quoracdn.net/main-qimg-675fedee717331e478ecfcc40e2e4d38)
+* SVMs are sensitive to feature scaling [This link explains why](https://stats.stackexchange.com/questions/279911/why-is-svm-sensitive-to-scaling-of-features#:~:text=SVM%20constructs%20a%20hyperplane%20such,points%20(called%20support%20vectors).&text=So%20its%20necessary%20to%20scale,distance%20to%20construct%20a%20hyperplane.)
 
 
 [back to top](#machine-learning)
@@ -166,7 +166,7 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 * Voting: soft voting (predict probability and average over all individual learners) often works better than hard voting
 * out-of-bag instances (37%) can act validation set for bagging
 
-
+[More detailed explaination of Bagging and Boosting](https://hackernoon.com/how-to-develop-a-robust-algorithm-c38e08f32201)
 
 [back to top](#machine-learning)
 
@@ -339,3 +339,17 @@ generated.
 * A model where the number of parameters is not determined prior to training. Nonparametric does not mean that they have NO parameters! On the contrary, nonparametric models (can) become more and more complex with an increasing amount of data.
 
 [back to top](#machine-learning)
+
+
+### Various Optimizers
+
+* [Towards data science article](https://towardsdatascience.com/optimizers-for-training-neural-network-59450d71caf6)
+* [Standford CS 231n](https://www.youtube.com/watch?v=_JB0AO7QxSA&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk&index=7&ab_channel=StanfordUniversitySchoolofEngineering)
+
+### Evaluation Metrics and Loss Functions
+
+### PCA, SVD, LDA
+
+### Recommmendation Systems
+
+### Steps you take when working on a machine learning problem
