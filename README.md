@@ -367,8 +367,8 @@ From an interpretation standpoint, MAE is clearly the winner. RMSE does not desc
 
 ### Steps you take when working on a machine learning problem
 
-*[General Approach](https://www.quora.com/What-are-the-general-steps-to-tackle-a-machine-learning-problem)
-*[Another General Approach](https://hackernoon.com/how-to-go-about-solving-almost-any-machine-learning-problem-t2ja3596)
+* [General Approach](https://www.quora.com/What-are-the-general-steps-to-tackle-a-machine-learning-problem)
+* [Another General Approach](https://hackernoon.com/how-to-go-about-solving-almost-any-machine-learning-problem-t2ja3596)
 * Some tips and trickls
     - Progressive Resizing
     - Trying Various Loss Functions
