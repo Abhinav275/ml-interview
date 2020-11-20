@@ -348,8 +348,34 @@ generated.
 
 ### Evaluation Metrics and Loss Functions
 
+* [Evaluation Metrics](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/)
+* When do we use AUC and not accuracy? - The implicit goal of AUC is to deal with situations where you have a very skewed sample distribution, and don't want to overfit to a single class.
+* Loss functions
+    - Mean Squared Error
+    - Mean Absolute Error
+    - Cross Entropy Loss
+    - Focal Loss
+* RMSE has the benefit of penalizing large errors more so can be more appropriate in some cases, for example, if being off by 10 is more than twice as bad as being off by 5. But if being off by 10 is just twice as bad as being off by 5, then MAE is more appropriate.
+From an interpretation standpoint, MAE is clearly the winner. RMSE does not describe average error alone and has other implications that are more difficult to tease out and understand. On the other hand, one distinct advantage of RMSE over MAE is that RMSE avoids the use of taking the absolute value, which is undesirable in many mathematical calculations
+
 ### PCA, SVD, LDA
+
+* [PCA vs LDA](https://medium.com/analytics-vidhya/pca-vs-lda-vs-t-sne-lets-understand-the-difference-between-them-22fa6b9be9d0)
+![PCA vs LDA](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FPCA-feature-basis-vs-LDA-feature-basis-obtained-from-a-set-of-2D-training-samples_fig4_267196113&psig=AOvVaw2DOmDR-d0Zv343Ppv14bb2&ust=1605935402201000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNC2oOWtkO0CFQAAAAAdAAAAABAD)
 
 ### Recommmendation Systems
 
 ### Steps you take when working on a machine learning problem
+
+*[General Approach](https://www.quora.com/What-are-the-general-steps-to-tackle-a-machine-learning-problem)
+*[Another General Approach](https://hackernoon.com/how-to-go-about-solving-almost-any-machine-learning-problem-t2ja3596)
+* Some tips and trickls
+    - Progressive Resizing
+    - Trying Various Loss Functions
+    - Trying Various Networks
+    - Trying different augmentations
+    - Ensemble of various models
+    - Keep Changing the seed
+    - Keep adding variations to models to have better ensembles
+    - Ensemble methods can be average, weighted average, logistic regression, lgbm, xgboost, baysian
+    - Can take ensemble of ensemble also
